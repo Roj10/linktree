@@ -1,0 +1,108 @@
+/* Reset e estilo global */
+* {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #161f29;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.box {
+    border-radius: 7px;
+    border: solid 3px #04d7e7;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    animation: appear 1s linear;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.view h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.links {
+    margin-top: 2rem;
+}
+
+#link {
+    background-color: #080b0f;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    transition: 1.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.block:hover {
+    transform: translateY(-10px);
+    background-color: #10161d;
+    box-shadow: 5px 5px 15px rgba(0, 119, 255, 0.5);
+}
+
+.bxl-linkedin-square, 
+.bxl-instagram, 
+.bxl-youtube, 
+.bxl-github {
+    font-size: 50px;
+    margin-right: 1rem;
+}
+
+.title {
+    color: #04d7e7;
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+/* Animações */
+@keyframes appear {
+    from {
+        opacity: 0;
+        margin-top: 3rem;
+    }
+    to {
+        opacity: 1;
+    }
+}
