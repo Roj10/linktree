@@ -14,6 +14,7 @@ body {
     height: 100vh;
     background-color: #161f29;
     overflow: hidden;
+    padding: 1rem;
 }
 
 a {
@@ -25,8 +26,12 @@ a {
     border-radius: 7px;
     border: solid 3px #04d7e7;
     padding: 2rem;
-    max-width: 600px;
+    max-width: 580px;
     width: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.5rem;
+    background-color: #10161d;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     animation: appear 1s linear;
 }
@@ -36,44 +41,42 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.view h2 {
+.view {
     text-align: center;
-    margin-bottom: 1rem;
-}
-
-.links {
-    margin-top: 2rem;
-}
-
-#link {
-    background-color: #080b0f;
-}
-
-.block {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: grid;
+    gap: 1rem;
 }
 
 img {
     display: block;
     max-width: 200px;
     margin: 0 auto;
-    transition: 1.5s;
+    transition: transform 1.5s ease;
 }
 
 img:hover {
     transform: scale(1.1);
-    transition: 1.5s;
     cursor: pointer;
 }
 
+.links {
+    display: grid;
+    gap: 1rem;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    background-color: #080b0f;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .block:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     background-color: #10161d;
     box-shadow: 5px 5px 15px rgba(0, 119, 255, 0.5);
 }
@@ -82,7 +85,7 @@ img:hover {
 .bxl-instagram, 
 .bxl-youtube, 
 .bxl-github {
-    font-size: 50px;
+    font-size: 40px;
     margin-right: 1rem;
 }
 
@@ -92,17 +95,58 @@ img:hover {
 }
 
 h2 {
-    margin: 1rem;
     font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .box {
+        padding: 1.5rem;
+    }
+
+    .block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bxl-linkedin-square, 
+    .bxl-instagram, 
+    .bxl-youtube, 
+    .bxl-github {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .bxl-linkedin-square, 
+    .bxl-instagram, 
+    .bxl-youtube, 
+    .bxl-github {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
 }
 
 /* Animações */
 @keyframes appear {
     from {
         opacity: 0;
-        margin-top: 3rem;
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
