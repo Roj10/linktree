@@ -11,10 +11,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Define altura mínima para ocupar 100% da janela */
     background-color: #161f29;
-    overflow: hidden;
     padding: 1rem;
+    overflow-y: auto; /* Permite rolagem no eixo vertical */
+    margin: 0; /* Remove margem do body */
 }
 
 a {
