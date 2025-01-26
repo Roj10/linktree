@@ -36,7 +36,7 @@ A página foi desenvolvida utilizando **HTML** e **CSS**, com foco em:
 
 1. **Clone o repositório ou baixe os arquivos:**
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/Roj10/linktree.git
    ```
 2. **Abra o arquivo HTML em seu navegador:**
    - Localize o arquivo `index.html` no diretório do projeto.
