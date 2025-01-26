@@ -62,7 +62,7 @@ O projeto foi projetado para funcionar em diferentes tamanhos de tela:
 
 ## Exemplo de Interface
 
-![Preview do Projeto](./screenshot.png)
+![Preview do Projeto]![Captura de tela 2025-01-26 192029](https://github.com/user-attachments/assets/77d36e8e-e54f-43ec-98ae-d8f0cf2207a3)
 
 ## Autor
 
